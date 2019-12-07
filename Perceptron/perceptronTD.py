@@ -37,7 +37,7 @@ class Perceptron:
             csv_writer = csv.writer(csvfile)
             header_line = ['w1', 'w2', 'w-biais']
             csv_writer.writerow(header_line)
-            csv_writer.writerow(self.list_poids + [self.biais_poids])
+            csv_writer.writerow((self.list_poids[0], self.list_poids[1], self.biais_poids))
             
     def charger_poids(self):
         filename = 'perceptronPoids.csv'
